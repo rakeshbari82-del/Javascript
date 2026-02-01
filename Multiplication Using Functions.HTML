@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiplication Using Function</title>
+    </head>
+    <body>
+        <h1 style="color: rgb(237, 78, 252);">Codingal Education</h1>
+        <h1 style="color: rgb(24, 255, 24);">Result of Multiplication</h1>
+        <button onclick="multiply(40)">Click Me</button>
+        <p id="result"></p>
+
+        <script>
+            function multiply(a,b)
+            {
+                if(b === undefined)
+                {
+                    alert ("The value of b is undefined")
+                    b=50;
+                }
+                var result = a * b;
+
+                document.getElementById("result").innerHTML = result;
+            }
+        </script>
+    </body>
+</html>

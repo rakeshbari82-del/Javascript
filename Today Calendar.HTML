@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="MyCalendarDisplay"></div>
+        <script>
+            function showDate()
+            {
+                var date = new Date();
+
+                var d = date.getDate();
+                var day = date.getDay();
+                var month = date.getMonth();
+                var year = date.getFullYear();
+                
+                var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+                d = (d < 10) ? "0" + d : d;
+               
+                var currentDate =  days[day] + ", " + d + " " + months[month] + " " + year;
+                document.getElementById("MyCalendarDisplay").innerText = currentDate;
+                setTimeout(showDate, 1000);
+            }
+            
+            showDate();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <div class="wrapper">
+            <h1>Counter App</h1>
+            <p id="count">0</p>
+
+            <button id="button-increase" onclick="CounterApp()">Increase</button>
+            <button id="button-decrease">Decrease</button>
+            <button id="button-reset">Reset</button>
+        </div>
+
+        <script>
+            function CounterApp()
+            {
+                var count = 0;
+
+                var display = document.getElementById("count");
+                var buttonIncrease = document.getElementById("button-increase");
+                var buttonDecrease = document.getElementById("button-decrease");
+                var buttonReset = document.getElementById("button-reset");
+
+                buttonIncrease.onclick = function()
+                {
+                    count++;
+                    display.innerHTML = count;
+                }
+
+                buttonDecrease.onclick = function()
+                {
+                    count--;
+                    display.innerHTML = count;
+                }
+
+                buttonReset.onclick = function()
+                {
+                    count = 0;
+                    display.innerHTML = count;
+                }
+            }
+            
+        </script>
+    </body>
+</html>

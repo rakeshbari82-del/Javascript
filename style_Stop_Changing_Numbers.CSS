@@ -1,0 +1,16 @@
+body 
+{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+#number 
+{
+    font-size: 120px;
+    margin-top: 50px;
+}
+
+#number:hover 
+{
+    cursor: pointer;
+}

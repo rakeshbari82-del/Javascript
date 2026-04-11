@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <section>
+            <img class="mySlides" src="NDA Photo 1.png" style="height: 500px;">
+            <img class="mySlides" src="NDA Photo 2.png" style="height: 500px;">
+            <img class="mySlides" src="NDA Photo 3.png" style="height: 500px;">
+            <img class="mySlides" src="NDA Photo 4.png" style="height: 350px;">
+            <img class="mySlides" src="NDA Photo 5.png" style="height: 350px;">
+            <img class="mySlides" src="NDA Photo 6.png" style="height: 400px;">
+            <img class="mySlides" src="NDA Photo 7.png" style="height: 500px;">
+            <img class="mySlides" src="NDA Photo 8.png" style="height: 400px;">
+            <img class="mySlides" src="NDA Photo 9.png" style="height: 500px;">
+        </section>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel()
+            {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) 
+                {
+                    x[i].style.display = "none";
+                }
+
+                myIndex++;
+                if (myIndex > x.length) 
+                {
+                    myIndex = 1
+                }
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 2000);
+            }
+        </script>
+    </body>
+</html>

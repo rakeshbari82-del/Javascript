@@ -1,0 +1,157 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.navbar 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+.navbar h2 
+{
+    color: #ffcc00;
+}
+
+.navbar a 
+{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover 
+{
+    color: #ffcc00;
+}
+
+.hero 
+{
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 
+{
+    font-size: 50px;
+    color: #ffcc00;
+}
+
+#typing 
+{
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+.btn 
+{
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover 
+{
+    transform: scale(1.1);
+    background: white;
+}
+
+.btn 
+{
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover 
+{
+    transform: scale(1.1);
+    background: white;
+}
+
+.section 
+{
+    padding: 60px 40px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+
+.section.show 
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section h2 
+{
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.cards 
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card 
+{
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 260px;
+    transition: 0.4s;
+}
+
+.card:hover 
+{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ffcc00;
+}
+
+input, textarea 
+{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer 
+{
+    text-align: center;
+    padding: 20px;
+    background: black;
+}

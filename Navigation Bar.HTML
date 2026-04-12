@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NDA Elite Academy</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Navigation Bar.CSS">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navbar">
+            <h2>NDA Elite</h2>
+            <div>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#subjects">Subjects</a>
+                <a href="#prep">Preparation</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        
+        <section id="home" class="hero">
+            <h1>Future NDA Officer</h1>
+            <div id="typing"></div>
+            <button class="btn">Start Journey</button>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About NDA</h2>
+            <p>NDA trains cadets for Army, Navy & Air Force with discipline and leadership.</p>
+        </section>
+
+        <section id="Subjects" class="section">
+            <h2>Subjects</h2>
+            <div class="cards">
+                <div class="card">Mathematics</div>
+                <div class="card">General Knowledge</div>
+                <div class="card">English</div>
+            </div>
+        </section>
+
+        <section id="prep" class="section">
+            <h2>Preparation Tips</h2>
+            <p>Practice daily, stay fit, revise regularly.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <input type="text" placeholder="Name"><br>
+            <input type="email" placeholder="Email"><br>
+            <textarea placeholder="Message"></textarea><br>
+            <button class="btn">Send</button>
+        </section>
+
+        <div class="footer">
+            <p>© NDA Elite | Made by You 🚀</p>
+        </div>
+
+        <script>
+            const text = "Discipline. Dedication. Determination.";
+            let i = 0;
+
+            function typing() 
+            {
+                if (i < text.length) 
+                {
+                    document.getElementById("typing").innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typing, 50);
+                }
+            }
+            
+            typing();
+
+            const sections = document.querySelectorAll(".section");
+
+            window.addEventListener("scroll", () => 
+            {
+                sections.forEach(sec => 
+                {
+                    const top = window.scrollY;
+                    const offset = sec.offsetTop - 300;
+                    const height = sec.offsetHeight;
+
+                    if (top >= offset && top < offset + height) 
+                    {
+                        sec.classList.add("show");
+                    }
+                });
+            });
+        </script>
+
+    </body>
+</html>
